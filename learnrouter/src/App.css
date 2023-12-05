@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 260px;
+}
+.mainnotfound {
+  width: "100%";
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: red;
+  text-decoration: underline;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.userdetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}

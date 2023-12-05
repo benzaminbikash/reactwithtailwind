@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+} */
+
+/* @layer components {
+  .button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+} */
+
+/* body {
+  background-color: rgb(97, 96, 96);
+  color: white;
+} */
