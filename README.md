@@ -28,6 +28,7 @@ EcommerceWeb:
 ![image](https://github.com/benzaminbikash/reactwithtailwind/assets/100546656/25fe82a9-9a16-4d4e-a0d8-4716435778e0)
 ![image](https://github.com/benzaminbikash/reactwithtailwind/assets/100546656/9c905e06-ab95-4d13-b0dc-41bbd409069b)
 ![image](https://github.com/benzaminbikash/reactwithtailwind/assets/100546656/f88d3a12-592c-410e-98ec-9277f81137e9)
+![Uploading image.png…]()
 
 
 
