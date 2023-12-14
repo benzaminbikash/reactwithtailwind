@@ -21,29 +21,29 @@ function Footer() {
         {/* second */}
         <div>
           <h2 className="font-bold text-1xl">Catelog</h2>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
         </div>
         {/* third */}
         <div>
           <h2 className="font-bold text-1xl">Customer Services</h2>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
         </div>
         {/* four */}
         <div>
           <h2 className="font-bold text-1xl">About us</h2>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
-          <p>Reshma</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
         </div>
       </div>
     </div>
