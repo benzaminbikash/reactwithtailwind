@@ -1,18 +1,18 @@
 import React, { memo, useState } from "react";
 
-function Counter({ multiply }) {
+function Counter({data, handleData}) {
   const [counter, setCounter] = useState(0);
-  console.log("hey counter");
+  
+  console.log('counter page')
   return (
     <div>
-      <h1>Multiply {multiply}</h1>
-      <h1>Counter</h1>
+      <h1>Table of {data}</h1>
       <h1 className="text-9xl">{counter}</h1>
       <button
         className="bg-red-500 p-2"
-        onClick={() => setCounter(counter + 1)}
+        onClick={() => handleData( )}
       >
-        Increase
+        Multiple
       </button>
     </div>
   );

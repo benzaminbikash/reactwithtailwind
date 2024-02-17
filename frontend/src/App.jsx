@@ -1,21 +1,17 @@
 import React from "react";
 import "./index.css";
-import Home from "./Project7/page/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./Project7/components/Navbar";
-import Detail from "./Project7/page/Detail";
-import Cart from "./Project7/page/Cart";
-import Pure from "./practice/PureComponent/Pure";
-import Index from "./optimization/Index";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./AsyncThunk/pages/Home";
+import Navbar from "./AsyncThunk/Navbar";
+import Add from "./AsyncThunk/pages/Add";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Index />} />
-        {/* <Route path="/detail/:id" element={<Detail />} />
-        <Route path="cart" element={<Cart />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<Add />} />
       </Routes>
     </BrowserRouter>
   );

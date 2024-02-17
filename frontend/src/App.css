@@ -18,3 +18,13 @@ body {
   background-color: rgb(97, 96, 96);
   color: white;
 }
+
+/* @layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+  .no-scrollbar {
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
+}
+} */

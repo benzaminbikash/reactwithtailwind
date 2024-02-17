@@ -27,7 +27,8 @@ function Horizontal() {
           onClick={() => sliderLeft(elementRef.current)}
         />
         <div
-          className="flex overflow-x-auto gap-4  scroll-smooth no-scrollbar "
+          className="flex  overflow-x-auto gap-5 scroll-smooth  "
+
           ref={elementRef}
         >
           {product.map((item) => {
