@@ -3,10 +3,17 @@ import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { searchData } from "./features/UserApi";
 
-function Navbar() {
+function Navbar({ show }) {
   const dispatch = useDispatch();
+  console.log(show);
   return (
-    <div>
+    <div
+      className={`${
+        show
+          ? "max-w-full fixed w-full bg-red-500 transition-all duration-1000 h-20 "
+          : "hidden h-0 "
+      }`}
+    >
       <div className="flex justify-between mx-10 my-4 ">
         <h1>CreateAsyncThunk</h1>
         <div>
