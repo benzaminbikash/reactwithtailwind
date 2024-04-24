@@ -1,33 +1,20 @@
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 import { useEffect } from "react";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
-
-const schema = yup.object({
-  username: yup.string().required("Username is required."),
-  email: yup
-    .string()
-    .email("Email format is not valid.")
-    .required("Email is required."),
-  age: yup.number().required("Age is required."),
-});
 
 function App() {
   const form = useForm({
     defaultValues: {
       username: "",
       email: "",
-
-      // password: "",
-      // social: {
-      //   facebook: "",
-      //   tiktok: "",
-      // },
-      // phoneNumber: ["", ""],
+      password: "",
+      social: {
+        facebook: "",
+        tiktok: "",
+      },
+      phoneNumber: ["", ""],
     },
-    // mode: "onSubmit",
-    resolver: yupResolver(schema),
+    mode: "onSubmit",
   });
   const {
     register,
@@ -101,12 +88,9 @@ function App() {
             type="text"
             id="username"
             className="text-black"
-            {...register(
-              "username"
-              // {
-              //   required: "Username is required.",
-              // }
-            )}
+            {...register("username", {
+              required: "Username is required.",
+            })}
           />
           <p>{errors.username?.message}</p>
           <label htmlFor="email">Email</label>
@@ -114,27 +98,24 @@ function App() {
             type="email"
             id="Email"
             className="text-black"
-            {...register(
-              "email"
-              // {
-              //   // disabled: watch("username") === "",
-              //   required: "Email is required.",
-              //   pattern: {
-              //     value: /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/,
-              //     message: "Invalid Email.",
-              //   },
-              //   validate: (d) => {
-              //     return (
-              //       d !== "benzaminbikash@gmail.com" || "Enter another email"
-              //     );
-              //   },
-              //   // emailAvaiable: async (fieldValue) => {
-              //   //   const response = await fetch("");
-              //   //   const data = await response.json();
-              //   //   return data.length == 0 || "email already exits.";
-              //   // },
-              // }
-            )}
+            {...register("email", {
+              // disabled: watch("username") === "",
+              required: "Email is required.",
+              pattern: {
+                value: /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/,
+                message: "Invalid Email.",
+              },
+              validate: (d) => {
+                return (
+                  d !== "benzaminbikash@gmail.com" || "Enter another email"
+                );
+              },
+              // emailAvaiable: async (fieldValue) => {
+              //   const response = await fetch("");
+              //   const data = await response.json();
+              //   return data.length == 0 || "email already exits.";
+              // },
+            })}
           />
           <p>{errors.email?.message}</p>
 
@@ -143,15 +124,12 @@ function App() {
             type="number"
             id="age"
             className="text-black"
-            {...register(
-              "age"
-              //  {
-              //   valueAsNumber: true,
-              //   required: "Age is required.",
-              //   max: { value: 50, message: "Maximum age is 50." },
-              //   min: { value: 20, message: "Minimum age is 20." },
-              // }
-            )}
+            {...register("age", {
+              valueAsNumber: true,
+              required: "Age is required.",
+              max: { value: 50, message: "Maximum age is 50." },
+              min: { value: 20, message: "Minimum age is 20." },
+            })}
           />
           <p>{errors.age?.message}</p>
 
