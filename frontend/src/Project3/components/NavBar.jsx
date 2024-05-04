@@ -49,7 +49,7 @@ function NavBar() {
       )}
       {/* sidebar */}
       {nav && (
-        <div className="bg-white w-[300px] h-screen fixed top-0 left-0 z-10">
+        <div className="bg-white -left text-black w-[300px] h-screen fixed top-0 left-0 z-10">
           <div className="p-4 flex items-center justify-between">
             <p className="font-bold text-2xl">Best Eats</p>
             <AiOutlineClose size={24} onClick={() => setNav(false)} />
